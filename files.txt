@@ -1,0 +1,19 @@
+Important files for neginners
+
+ package.json
+ node_modules
+ src folder
+    app
+    assests
+    enivornment
+    index.html
+    main.js
+    style.css
+
+For advance
+    package-lock.json
+    angular.json
+    tsconfig files
+    .browserslistrc
+    karma.config.js
+    polyfills.ts
