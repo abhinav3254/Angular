@@ -1,8 +1,8 @@
 Important files for neginners
 
- package.json
- node_modules
- src folder
+ package.json --> Most imp file, deatils of the project
+ node_modules  --> rebuilt again and again when we run npm install
+ src folder  --> developers do 99% works in this file
     app
     assests
     enivornment
