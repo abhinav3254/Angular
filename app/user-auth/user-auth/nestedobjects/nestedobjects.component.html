@@ -1,0 +1,19 @@
+<div>
+    <table border="2">
+        <tr>
+            <th>Name</th>
+            <th>Country</th>
+            <th>Followers</th>
+            <th>social handles</th>
+        </tr>
+        <tr *ngFor="let user of users">
+            <td>{{user.name}}</td>
+            <td>{{user.country}}</td>
+            <td>{{user.followers}}</td>
+            <td *ngFor="let i of user.socialHandles">
+                <li>{{i.platform}}</li>
+                <li>{{i.handle}}</li>
+            </td>
+        </tr>
+    </table>
+</div>
