@@ -8,7 +8,7 @@
 <button style="margin-left: 1rem;" (click)="subMe(20,10)">-</button> -->
 
 
-<br>
+<!-- <br>
 <input type="text" #box1 placeholder="name keyup" (keyup)="getData(box1.value)"><br><br>
 <button (click)="getData('Angular')">submit</button>
 <br><br>
@@ -18,4 +18,8 @@
 <input type="text" #box3 placeholder="name blur" (blur)="getData(box3.value)"><br><br>
 <button (click)="getData('Angular')">submit</button>
 <br><br>
-<button (mouseover)="getData('hover')">hover me</button>
+<button (mouseover)="getData('hover')">hover me</button> -->
+
+
+<input type="text" #val (keyup)="getValue(val.value)" placeholder="Enter name" name="name">
+<p>{{displayOutput}}</p>
