@@ -1,0 +1,69 @@
+<!-- using interpolation -->
+<!-- 
+    Diadvantages of interpolation
+    1. We can't put boolean value here
+    it accepts only String and number value
+    but binding accepts
+ -->
+<input type="text" placeholder="input1" name="user-name" value="{{name}}">
+<br><br>
+<!-- This is property binding -->
+<input type="text" placeholder="input2" name="user-name" [value]="name">
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+<!-- Here in this case disabled true doesn't work -->
+<input type="text" placeholder="input3" name="user-name" value="{{name}}" disabled="{{disabled}}">
+<br><br>
+<!-- This is property binding -->
+<input type="text" placeholder="input4" name="user-name" [value]="name" [disabled]="disabled">
+
+
+<!-- If else condition -->
+<hr>
+<!-- if condition -->
+<h1>If else in angular</h1>
+<p *ngIf="disabled else elseBlock">This appears when condition is true</p>
+<!-- else condition -->
+<ng-template #elseBlock>This appears when else works</ng-template>
+
+<hr>
+
+<h1>Another way of if else block to make it clear</h1>
+
+<h4 *ngIf="disabled; then ifBlock1 else elseBlock1"></h4>
+<ng-template #ifBlock1>If block</ng-template>
+<ng-template #elseBlock1>else Block</ng-template>
+
+<!-- If we have to compare then we decide what to run from if else -->
+<!-- Then we can compare like this -->
+<!-- *ngIf="disabled=='yes'; then ifBlock1 else elseBlock1" -->
+<!-- like this we compare our values -->
+
+<hr>
+<!-- For Loop in Angular -->
+<h4 *ngFor="let item of users">{{item}}</h4>
+
+<div class="table">
+    <table border="1px" [cellPadding]="5">
+        <tr>
+            <th>Employee Id</th>
+            <th>Employee Name</th>
+            <th>Employee Gender</th>
+            <th>Employee Experience</th>
+            <th>Employee Salary</th>
+            <th>Action</th>
+        </tr>
+        <tr *ngFor="let employee of employees">
+            <td>{{employee.employeeId}}</td>
+            <td>{{employee.name}}</td>
+            <td>{{employee.gender}}</td>
+            <td>{{employee.experience}}</td>
+            <td>{{employee.salary}}</td>
+            <button (click)="removeIt(employee)">X</button>
+        </tr>
+    </table>
+</div>

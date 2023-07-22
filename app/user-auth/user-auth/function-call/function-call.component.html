@@ -1,0 +1,37 @@
+<!-- How to call a function from function-call.component.ts -->
+<!-- <button (click)="getName()">subscribe</button>
+<br><br>
+<input type="text" id="num1" name="num1" placeholder="Enter first number">
+<br><br>
+<input type="text" id="num2" name="num2" placeholder="Enter second number"><br><br>
+<button (click)="addMe(10,20)">+</button>
+<button style="margin-left: 1rem;" (click)="subMe(20,10)">-</button> -->
+
+
+<!-- <br>
+<input type="text" #box1 placeholder="name keyup" (keyup)="getData(box1.value)"><br><br>
+<button (click)="getData('Angular')">submit</button>
+<br><br>
+<input type="text" #box2 placeholder="name keydown" (keydown)="getData(box2.value)"><br><br>
+<button (click)="getData('Angular')">submit</button>
+<br><br>
+<input type="text" #box3 placeholder="name blur" (blur)="getData(box3.value)"><br><br>
+<button (click)="getData('Angular')">submit</button>
+<br><br>
+<button (mouseover)="getData('hover')">hover me</button> -->
+
+
+<!-- <input type="text" #val placeholder="Enter name" name="name">
+<br><br>
+<button (click)="getValue(val.value)">Output</button>
+<br><br>
+<p>Box value is :- {{displayOutput}}</p> -->
+
+<input type="text" #num1 placeholder="number1">
+<br><br>
+<input type="text" #num2 placeholder="number2">
+<br><br>
+<button (click)="getAddition(num1.value,num2.value)">+</button>
+<button (click)="getSubstrcation(num1.value,num2.value)" style="margin-left: 10px;">-</button>
+<br><br>
+<p>{{displayValue}}</p>
