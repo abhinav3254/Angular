@@ -1,0 +1,22 @@
+<!-- using interpolation -->
+<!-- 
+    Diadvantages of interpolation
+    1. We can't put boolean value here
+    it accepts only String and number value
+    but binding accepts
+ -->
+<input type="text" placeholder="input1" name="user-name" value="{{name}}">
+<br><br>
+<!-- This is property binding -->
+<input type="text" placeholder="input2" name="user-name" [value]="name">
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+<!-- Here in this case disabled true doesn't work -->
+<input type="text" placeholder="input3" name="user-name" value="{{name}}" disabled="{{disabled}}">
+<br><br>
+<!-- This is property binding -->
+<input type="text" placeholder="input4" name="user-name" [value]="name" [disabled]="disabled">
