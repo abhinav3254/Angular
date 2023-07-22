@@ -1,0 +1,25 @@
+.table {
+    width: 52%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+td {
+    text-align: center;
+}
+
+button {
+    background-color: red;
+    color: white;
+    border: 0px;
+    padding: 5px 10px;
+    margin: 2px 5px;
+    cursor: pointer;
+    transition: padding 2s;
+}
+
+button:hover {
+    opacity: 0.6;
+    padding: 5px 20px;
+}

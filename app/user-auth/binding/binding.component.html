@@ -42,3 +42,28 @@
 <!-- Then we can compare like this -->
 <!-- *ngIf="disabled=='yes'; then ifBlock1 else elseBlock1" -->
 <!-- like this we compare our values -->
+
+<hr>
+<!-- For Loop in Angular -->
+<h4 *ngFor="let item of users">{{item}}</h4>
+
+<div class="table">
+    <table border="1px" [cellPadding]="5">
+        <tr>
+            <th>Employee Id</th>
+            <th>Employee Name</th>
+            <th>Employee Gender</th>
+            <th>Employee Experience</th>
+            <th>Employee Salary</th>
+            <th>Action</th>
+        </tr>
+        <tr *ngFor="let employee of employees">
+            <td>{{employee.employeeId}}</td>
+            <td>{{employee.name}}</td>
+            <td>{{employee.gender}}</td>
+            <td>{{employee.experience}}</td>
+            <td>{{employee.salary}}</td>
+            <button (click)="removeIt(employee)">X</button>
+        </tr>
+    </table>
+</div>
