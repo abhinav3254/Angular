@@ -1,0 +1,15 @@
+a {
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background-color: black;
+    border-radius: 10px;
+    transition: background-color 2s;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+a:hover {
+    background-color: white;
+    color: black;
+}
