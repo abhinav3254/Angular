@@ -18,7 +18,13 @@ export class FunctionCallComponent {
   //   alert(num1 - num2);
   // }
 
-  getData(value: String): void {
-    console.warn(value);
+  // getData(value: String): void {
+  //   console.warn(value);
+  // }
+
+  displayOutput: String = '';
+  getValue(val: string): void {
+    console.warn(val);
+    this.displayOutput = val;
   }
 }
