@@ -20,3 +20,25 @@
 <br><br>
 <!-- This is property binding -->
 <input type="text" placeholder="input4" name="user-name" [value]="name" [disabled]="disabled">
+
+
+<!-- If else condition -->
+<hr>
+<!-- if condition -->
+<h1>If else in angular</h1>
+<p *ngIf="disabled else elseBlock">This appears when condition is true</p>
+<!-- else condition -->
+<ng-template #elseBlock>This appears when else works</ng-template>
+
+<hr>
+
+<h1>Another way of if else block to make it clear</h1>
+
+<h4 *ngIf="disabled; then ifBlock1 else elseBlock1"></h4>
+<ng-template #ifBlock1>If block</ng-template>
+<ng-template #elseBlock1>else Block</ng-template>
+
+<!-- If we have to compare then we decide what to run from if else -->
+<!-- Then we can compare like this -->
+<!-- *ngIf="disabled=='yes'; then ifBlock1 else elseBlock1" -->
+<!-- like this we compare our values -->
