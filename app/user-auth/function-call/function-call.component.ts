@@ -23,8 +23,16 @@ export class FunctionCallComponent {
   // }
 
   displayOutput: String = '';
+  displayValue: Number = 0;
   getValue(val: string): void {
     console.warn(val);
     this.displayOutput = val;
+  }
+
+  getAddition(num1: any, num2: any) {
+    this.displayValue = parseFloat(num1) + parseFloat(num2);
+  }
+  getSubstrcation(num1: any, num2: any) {
+    this.displayValue = parseFloat(num1) - parseFloat(num2);
   }
 }

@@ -21,5 +21,17 @@
 <button (mouseover)="getData('hover')">hover me</button> -->
 
 
-<input type="text" #val (keyup)="getValue(val.value)" placeholder="Enter name" name="name">
-<p>{{displayOutput}}</p>
+<!-- <input type="text" #val placeholder="Enter name" name="name">
+<br><br>
+<button (click)="getValue(val.value)">Output</button>
+<br><br>
+<p>Box value is :- {{displayOutput}}</p> -->
+
+<input type="text" #num1 placeholder="number1">
+<br><br>
+<input type="text" #num2 placeholder="number2">
+<br><br>
+<button (click)="getAddition(num1.value,num2.value)">+</button>
+<button (click)="getSubstrcation(num1.value,num2.value)" style="margin-left: 10px;">-</button>
+<br><br>
+<p>{{displayValue}}</p>
