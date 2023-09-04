@@ -1,0 +1,23 @@
+<p>home works!</p>
+<!-- <img src="{{ books[0].imageUrl }}" alt="" />
+{{ books[0].publishers.country }} -->
+
+{{ books[0] | json }}
+
+<div class="main" *ngFor="let book of books" style="border: 1px solid black">
+  <div class="left">
+    <div class="publishers">
+      <p>Publisher Name :- {{ book.publishers.publisherName }}</p>
+    </div>
+    <div class="author">
+      <p>Author Name:- {{ book.author.authorName }}</p>
+    </div>
+    <div class="book">
+      <p>{{ book.title }}</p>
+      <p>{{ book.price }}</p>
+    </div>
+  </div>
+  <div class="right">
+    <img src="{{ book.imageUrl }}" alt="" />
+  </div>
+</div>

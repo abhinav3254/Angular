@@ -1,0 +1,12 @@
+
+.main{
+    display: flex;
+    flex-direction: row;
+}
+.left{
+    flex: 8;
+}
+
+.right{
+    flex:2;
+}
