@@ -1,0 +1,24 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin: auto;
+}
+
+.main input {
+    height: 30px;
+    margin: 5px;
+    padding: 2px;
+}
+
+button {
+    margin: 10px auto;
+    padding: 10px 30px;
+}
+
+a {
+    margin: 10px auto;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+}

@@ -1,0 +1,12 @@
+<form #signUpForm="ngForm" (ngSubmit)="onSubmit(signUpForm)">
+  <div class="main">
+    <input type="text" placeholder="username" ngModel name="username" />
+    <input type="text" placeholder="name" ngModel name="name" />
+    <input type="text" placeholder="john@example.com" ngModel name="email" />
+    <input type="password" placeholder="password" ngModel name="password" />
+    <input type="text" placeholder="phone" ngModel name="phone" />
+    <input type="text" placeholder="address" ngModel name="address" />
+    <button>signup</button>
+    <a href="/">Already User?Log In</a>
+  </div>
+</form>

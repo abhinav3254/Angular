@@ -1,0 +1,27 @@
+<div class="total">
+  <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)" novalidate>
+    <div class="main">
+      <input
+        type="text"
+        placeholder="username"
+        name="username"
+        [(ngModel)]="username"
+      />
+      <input
+        type="password"
+        placeholder="password"
+        name="password"
+        [(ngModel)]="password"
+      />
+      <button>login</button>
+      <div class="extra">
+        <a href="/signup">New User?Sign Up</a>
+        <a href="">Forget Password</a>
+      </div>
+    </div>
+  </form>
+  {{ username | json }}
+  {{ password | json }}
+  <br />
+  error :- {{ error | json }}
+</div>
